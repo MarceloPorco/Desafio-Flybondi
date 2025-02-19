@@ -1,0 +1,123 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo para el cuerpo de la página */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Estilo para el header */
+
+  header#over {
+    background-color: #ffffff; 
+    padding: 0.7em 2em;
+    display: flex;
+    justify-content: space-between;
+align-items: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  header#over img {
+    width: 120px;
+  }
+  
+  .enlaceHeader {
+    color: #000000;
+    text-decoration: none;
+    margin-left: 1em;
+    font-weight: bold;
+    text-align: inherit;
+  }
+  
+  .enlaceHeader:hover {
+    color: #FFD700; 
+  }
+  
+  /* Título principal */
+  h1 {
+    text-align: center;
+    margin-top: 5em;
+    font-size: 2.5rem;
+    color: #ffc919;
+  }
+  
+  /* Estilo para los labels y selects */
+  label {
+    display: block;
+    margin: 1em 0 0.5em 1em;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  select {
+    width: calc(100% - 2em);
+    padding: 0.5em;
+    margin: 0 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+  }
+  
+  /* Estilo para el contenedor de tarjetas */
+  #CardsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5em;
+    padding: 2em;
+    margin-top: 3em;
+  }
+  
+  /* Estilo para las tarjetas Cards */
+.card {
+    background-color: #ffffff;
+    border-radius: 12px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    padding: 1.5em;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+
+  
+  /* Efecto hover para las tarjetas */
+  .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); 
+  }
+  
+
+ 
+
+
+  /* Media Query responsive */
+  @media (max-width: 768px) {
+    header#over {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .enlaceHeader {
+      margin-left: 0;
+      margin-top: 0.5em;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    #CardsContainer {
+      padding: 1em;
+    }
+  }
+  
